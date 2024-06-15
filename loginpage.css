@@ -1,0 +1,28 @@
+body {
+    font-family: Georgia, serif;
+    background-image: url("homepage_image.jpg");
+    background-repeat: no-repeat;
+  }
+
+
+h1 {
+    margin-bottom: 100px;
+    text-align: center;
+    color: steelblue;
+}
+
+
+
+.field {
+    margin: auto;
+    width: 40%;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sign_in {
+    margin: auto;
+    width: 40%;
+    margin-top: 10px;
+}
