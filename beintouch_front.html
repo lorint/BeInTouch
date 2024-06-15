@@ -14,8 +14,10 @@
 
     <section class="section">
         <div class="container">
-            <!-- Add a header above the box -->
-            <h1 class="title has-text-centered">Welcome to the BeInTouch App</h1>
+            <!-- This line below is actual voodoo... -->
+            <div id="popup" class="popup">
+                <img id="popupImage" src="/docs/sample_person/alice.png" alt="Alice Image">
+            </div>
             <div class="container-box box">
                 
             <!-- Add a footer below the box -->
@@ -39,10 +41,12 @@
                         <!-- Notification column -->
                         <div class="column">
                             <div class="notification is-info is-light text-left">
-                                Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
-                                dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
-                                nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
-                                diam, et dictum <a>felis venenatis</a> efficitur.
+                                <p>Rosie is 39, she's an academic in social sciences. She's got a daughter called 
+                                    <span class="hover-text" data-image="/docs/sample_person/alice.png">Alice</span>.
+                                </p>
+                                <div id="popup" class="popup">
+                                    <img id="popupImage" src="/docs/sample_person/alice.png" alt="Alice Image">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -63,8 +67,14 @@
                         <!-- Notification column -->
                         <div class="column">
                             <div class="notification is-info is-light text-left">
-                                <p>The text here should be taken from the database for the
-                                    person in question.
+                                <p>Miguel's also 39, and he and Rosie met at university. Miguel works in epidemiology.
+
+                                    Rosie's mum is 
+                                    <span class="hover-text" data-image="/docs/sample_person/grace.png">Grace</span>.
+                                </p>
+                                <div id="popup" class="popup">
+                                    <img id="popupImage" src="/docs/sample_person/grace.png" alt="Grace Image">
+                                </div>
                                 </p>
 
                             </div>
@@ -87,12 +97,39 @@
                         <!-- Notification column -->
                         <div class="column">
                             <div class="notification is-info is-light text-left">
-                                <ul>
-                                    <li>Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.</li>
-                                    <li><strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.</li>
-                                    <li>Vestibulum rhoncus ac ex sit amet fringilla.</li>
-                                    <li>Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.</li>
-                                </ul>
+                             
+                                He was a analyst with bank, but he just got made redundant and is having a hard time.
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="box">
+                    <div class="columns">
+                        <!-- Button column -->
+                        <div class="column is-2 has-text-centered">
+                            <button class="button custom-button">
+                                <span class="icon">
+                                    <img src="/docs/sample_person/jim.png" alt="Jim 1 Image">
+                                </span>
+                            </button>      
+
+                        </div>
+                        <!-- Notification column -->
+                        <div class="column">
+                            <div class="notification is-info is-light text-left">
+                             
+                                Jim's a retired history teacher, his retirement project is writing a history of the family.
+                                Rosie's brother is
+                                <span class="hover-text" data-image="/docs/sample_person/tom.png">Tom</span>.
+                            </p>
+                            <div id="popup" class="popup">
+                                <img id="popupImage" src="/docs/sample_person/tom.png" alt="Tom Image">
+                            </div>
+
+                        
                             </div>
                         </div>
                     </div>

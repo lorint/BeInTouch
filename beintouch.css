@@ -143,3 +143,32 @@ body {
 
     padding-top: 10px;
 }
+
+
+/* Hover CSS */ 
+.container {
+    position: relative;
+}
+
+.hover-text {
+    cursor: pointer;
+    color: purple;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup img {
+    max-width: 200px; /* Adjust the size of the popup image */
+    height: auto;
+}
+
