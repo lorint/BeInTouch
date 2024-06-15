@@ -33,3 +33,7 @@ Rosie's brother is Tom:
 ![tom](tom.png)
 
 He was a analyst with bank, but he just got made redundant and is having a hard time.
+
+![Simon](simon.png)
+
+Simon is Miguel's best friend, he's a big fan of Aston Villa FC
