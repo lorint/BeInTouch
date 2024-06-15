@@ -5,7 +5,7 @@ class CreatePal < ActiveRecord::Migration[7.1]
     create_table :pals do |t|
       t.references :friender, foreign_key: { to_table: :people }
       t.references :friendee, foreign_key: { to_table: :people }
-      t.bigint :relation_id
+      t.references :relation, foreign_key: true
 
       t.timestamps
     end
