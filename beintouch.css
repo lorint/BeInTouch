@@ -112,6 +112,7 @@ body {
 .footer_title {
     text-align: center; /* Center align the footer title */
     margin-bottom: 20px; /* Optional: Add spacing between title and container-box */
+    font-size: 26px;
 }
 
 .custom-button {

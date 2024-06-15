@@ -8,38 +8,20 @@
     <link rel="stylesheet" href="/beintouch.css"> <!-- Include override CSS file here -->
 </head>
 <body>
-    <!-- Navbar with hamburger button -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <!-- Hamburger button -->
-            <div class="navbar-item">
-                <button class="button is-primary" onclick="toggleOptions()">
-                    <span>Show Options</span>
-                    <span class="icon">
-                        <i class="fas fa-bars"></i> <!-- Hamburger icon -->
-                    </span>
-                </button>
-            </div>
-        </div>
-        <!-- Options dropdown -->
-        <div id="optionsDropdown" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="button is-link" href="#">Option 1</a>
-                <a class="button is-link" href="#">Option 2</a>
-                <a class="button is-link" href="#">Option 3</a>
-            </div>
-        </div>
-    </nav>
     
+    <!-- Include Navbar using JavaScript fetch -->
+    <div id="navbarContainer"></div>
+
     <section class="section">
         <div class="container">
             <!-- Add a header above the box -->
-            <h1 class="title has-text-centered">Welcome to the Messaging App</h1>
-            <h2 class="footer_title">Footer Title</h2>
+            <h1 class="title has-text-centered">Welcome to the BeInTouch App</h1>
             <div class="container-box box">
                 
             <!-- Add a footer below the box -->
+            <h2 class="footer_title">Footer Title</h2>
             <footer class="footer">
+                
                 <div class="content has-text-centered">
 
                 <!-- Box with Button and Notification side by side -->
@@ -111,5 +93,6 @@
     </section>
 
     <script src="/hamburger.js"></script>
+    <script src="/navbar.js"></script>
 </body>
 </html>
