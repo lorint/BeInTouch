@@ -8,3 +8,84 @@
     max-height: 300px;
     overflow-y: auto;
 }
+.horizontal-scrollable-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.horizontal-scrollable-list .box {
+    flex: 0 0 auto; /* Ensure boxes do not grow */
+    width: 150px; /* Fixed width for consistency */
+    margin-right: 10px;
+    height: 100%; /* Set height to fill the container */
+}
+
+body {
+
+    background-image: none;
+}
+
+/* Ensure the navbar is fixed at the top left */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #3273dc; /* Adding contrast */
+}
+
+/* Style the hamburger menu */
+.navbar-burger {
+    margin: 10px;
+}
+
+/* Ensure hamburger icon is visible with white text */
+.navbar-burger.has-text-white {
+    color: #fff;
+}
+
+.navbar-dropdown {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for dropdown */
+}
+
+.navbar-start .button {
+    margin-right: 10px; /* Adjust the margin-right value as needed */
+}
+
+
+/* Transition for the dropdown menu */
+.navbar-menu {
+    display: none;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+    transition: max-height 0.3s ease-in-out;
+
+    position: absolute;
+    top: 100%; /* Position dropdown below navbar */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure dropdown is above other content */
+}
+
+.navbar-menu.is-active {
+    display: block;
+    max-height: 300px;
+}
+
+.navbar-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.horizontal-scrollable-list .box {
+    flex: 0 0 auto; /* Ensure boxes do not grow */
+    width: 150px; /* Fixed width for consistency */
+    margin-right: 10px;
+}
+
+.section {
+
+    margin-top: 30px;
+}
