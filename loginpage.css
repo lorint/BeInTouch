@@ -1,0 +1,31 @@
+body {
+    font-family: Georgia, serif;
+    background-image: url("homepage_image.jpg");
+    background-repeat: no-repeat;
+  }
+
+
+h1 {
+    margin-bottom: 100px;
+    text-align: center;
+    color: steelblue;
+}
+
+.field {
+    margin: auto;
+    width: 60%;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sign_in {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
