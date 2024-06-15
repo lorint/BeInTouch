@@ -84,6 +84,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_15_133100) do
     t.datetime "updated_at", null: false
     t.index ["friendee_id"], name: "index_pals_on_friendee_id"
     t.index ["friender_id"], name: "index_pals_on_friender_id"
+    t.index ["relation_id"], name: "index_pals_on_relation_id"
   end
 
   create_table "passions", force: :cascade do |t|
@@ -129,7 +130,16 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_15_133100) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "interactions", "events"
+  add_foreign_key "interactions", "pal_passions"
+  add_foreign_key "pal_passions", "pals"
+  add_foreign_key "pal_passions", "passions"
   add_foreign_key "pals", "people", column: "friendee_id"
   add_foreign_key "pals", "people", column: "friender_id"
+  add_foreign_key "pals", "relations"
   add_foreign_key "passions", "people", column: "created_by_id"
+  add_foreign_key "person_occasions", "occasions"
+  add_foreign_key "person_occasions", "people"
+  add_foreign_key "reminders", "people"
+  add_foreign_key "reminders", "person_occasions"
 end
