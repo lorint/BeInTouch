@@ -178,7 +178,7 @@ if ActiveRecord::Base.respond_to?(:brick_select) && !::Brick.initializer_loaded
   # # object's ID.  If there is no primary key then even that is not possible, so the object's .to_s method is called.
   # # To override these defaults and specify exactly what you want shown, such as first names and last names for a
   # # user, then you can use model_descrips like this, putting expressions with property references in square brackets:
-  # Brick.model_descrips = { 'User' => '[profile.firstname] [profile.lastname]' }
+  Brick.model_descrips = { 'Pal' => '[friender.first_name] => [friendee.first_name] | [relation.name]' }
 
   # # ERD SETTINGS
 
