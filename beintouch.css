@@ -116,6 +116,7 @@ body {
 }
 
 .custom-button {
+
     padding: 3rem 3rem; /* Adjust padding to make the button bigger */
     margin-right: 0rem; /* Adjust margin between button and text */
     position: relative; /* Ensure the button can contain absolute-positioned content */
@@ -131,6 +132,7 @@ body {
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center the image within the button */
+
 }
 
 .text-left {
