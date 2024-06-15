@@ -116,8 +116,21 @@ body {
 }
 
 .custom-button {
-    padding: 1rem 3rem; /* Adjust padding to make the button bigger */
+    padding: 3rem 3rem; /* Adjust padding to make the button bigger */
     margin-right: 0rem; /* Adjust margin between button and text */
+    position: relative; /* Ensure the button can contain absolute-positioned content */
+    overflow: hidden; /* Hide any overflow content */
+    width: 100px; /* Example fixed width for demonstration */
+
+    align-items: center;
+}
+.custom-button img {
+    width: 80%; /* Stretch image width to fill the button */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    position: absolute; /* Position the image absolutely within the button */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the image within the button */
 }
 
 .text-left {
