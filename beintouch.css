@@ -1,11 +1,15 @@
 .container-box {
     margin: 0 auto;
-    margin-top: 50px;
-    width: 80%;
-    max-width: 800px;
+    margin-top: 15vh;
+    width: 100%;
+    max-width: 1300px;
+    border: 1px solid #ccc; /* Optional: Add border for visual distinction */
+    padding: 20px;
+    overflow: auto; /* Enable scrolling within the container */
+    max-height: 60vh; /* Example height; adjust as needed */
 }
 .scrollable-list {
-    max-height: 300px;
+    max-height: 500px;
     overflow-y: auto;
 }
 .horizontal-scrollable-list {
@@ -22,8 +26,8 @@
 }
 
 body {
-
     background-image: none;
+    font-family: Georgia, serif;
 }
 
 /* Ensure the navbar is fixed at the top left */
@@ -50,8 +54,14 @@ body {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for dropdown */
 }
 
+.navbar-start {
+    display: inline-block;
+    flex-direction:column;
+}
+
 .navbar-start .button {
-    margin-right: 10px; /* Adjust the margin-right value as needed */
+    width: auto;
+    margin-bottom: 10px; /* Adjust the margin-right value as needed */
 }
 
 
@@ -88,4 +98,32 @@ body {
 .section {
 
     margin-top: 30px;
+}
+
+
+/* Footer CSS */
+
+.footer {
+    padding-top: 1px;
+    height: 60vh;
+
+}
+
+.footer_title {
+    text-align: center; /* Center align the footer title */
+    margin-bottom: 20px; /* Optional: Add spacing between title and container-box */
+}
+
+.custom-button {
+    padding: 1rem 3rem; /* Adjust padding to make the button bigger */
+    margin-right: 0rem; /* Adjust margin between button and text */
+}
+
+.text-left {
+    text-align: left;
+}
+
+.notification {
+
+    padding-top: 10px;
 }
