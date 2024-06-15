@@ -1,0 +1,10 @@
+.container-box {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 800px;
+}
+.scrollable-list {
+    max-height: 300px;
+    overflow-y: auto;
+}

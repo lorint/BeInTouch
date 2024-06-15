@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="title has-text-centered is-centered">Welcome to the Messaging App</h1>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/beintouch.css">
+
+</head>
+<body>
+    <!-- Navbar or other top elements -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                Messaging App
+            </a>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <!-- Add a header above the box -->
+            <h1 class="title has-text-centered">Welcome to the Messaging App</h1>
+            <div class="container-box box">
+                <div class="columns">
+                    <!-- Scrollable list on the left -->
+                    <div class="column is-one-third">
+                        <div class="scrollable-list" id="left-list">
+                            <ul id="left-items">
+                                <li>Attribute 1</li>
+                                <li>Attribute 2</li>
+                                <li>Attribute 3</li>
+                                <li>Attribute 4</li>
+                                <li>Attribute 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Main content area -->
+                    <div class="column">
+                        <!-- Add your main content here -->
+                        <div class="scrollable-list" id="main-list">
+                            <ul id="main-items">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                                <li>Item 5</li>
+                            </ul>
+                        </div>
+                        <button class="button is-primary mt-3" onclick="addItem()">Add New Item</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add a footer below the box -->
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Footer content goes here.</p>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script>
+        function addItem() {
+            const itemList = document.getElementById('main-items');
+            const newItem = document.createElement('li');
+            const itemNumber = itemList.children.length + 1;
+            newItem.textContent = `Item ${itemNumber}`;
+            itemList.appendChild(newItem);
+        }
+    </script>
+</body>
+</html>
