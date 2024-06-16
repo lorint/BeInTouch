@@ -20,6 +20,7 @@ This application sets out to strengthen our most important relationships with fa
 This project uses Ruby on Rails.
 
 #### Ruby version
+
 3.1.3
 
 #### System dependencies:
