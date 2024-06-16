@@ -1,0 +1,48 @@
+<!-- Include Navbar using JavaScript fetch -->
+<div id="navbarContainer"></div>
+
+<section class="section">
+    <div class="container">
+        <!-- Add a header above the box -->
+        <h1 class="title has-text-centered">Welcome to the BeInTouch App</h1>
+        <div class="container-box box">
+
+        <!-- Add a footer below the box -->
+        <h2 class="footer_title">Contact List</h2>
+        <footer class="footer">
+
+            <div class="content has-text-centered">
+
+            <% @pals.each do |pal| %>
+            <!-- Box with Button and Notification side by side -->
+            <div class="box">
+                <div class="columns">
+                    <!-- Button column -->
+                    <div class="column is-2 has-text-centered">
+                        <%= link_to pal.friendee, { class: "button custom-button" } do %>
+                            <span class="icon">
+                                <%= image_url = rails_storage_proxy_path(pal.friendee.image) if pal.friendee.image_attachment
+                                    image_tag image_url || '', alt: "Person #{pal.friendee_id} Image" %>
+                            </span>
+                        <% end %>
+
+                    </div>
+                    <!-- Notification column -->
+                    <div class="column">
+                        <div class="notification is-info is-light text-left">
+                            <%= pal.friendee.bio %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% end %>
+
+            <!-- Footer Boxes End here -->
+            </div>
+        </footer>
+
+    </div>
+</section>
+
+<script src="hamburger.js"></script>
+<script src="navbar.js"></script>
