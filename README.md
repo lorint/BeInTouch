@@ -8,12 +8,12 @@ This application was built at [BarCamp London's 2024 Hackathon](https://bclhack.
 
 Academic studies consistently show that the quality and number of our friendships have more influence on our chances of dying than other commonly considered risk factors.
 
-Academic Robin Dunbar says: "It is not too much of an exaggeration to say that you can eat as much as you like, dronk as much alcohol as you want, slob about as much as you fancy, fail to do your exercises and live in as polluted an atmosphere as you can find, and you will barely notice the difference. But having no friends or not being involved in community activities will dramatically affect how long you live." *Source: Friends: Understanding the Power of our Most Important Relationships by Robin Dunbar*
+Academic Robin Dunbar says: "Having no friends or not being involved in community activities will dramatically affect how long you live." *Source: Friends: Understanding the Power of our Most Important Relationships by Robin Dunbar*
 
-This application sets out to strengthen our most important relationships through: 
+This application sets out to strengthen our most important relationships with family, friends and community through: 
 - reminding us to be in touch with our family and friends
 - helping us remember significant occasions, both positive and negative, in the lives of our family and friends
-- helping us remember important information about others through note taking so that each interaction can be on a deeper level than surface information
+- helping us remember important information about others in our community
 
 ### Get Started with developing locally
 
