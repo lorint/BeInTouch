@@ -17,11 +17,11 @@ This application sets out to strengthen our most important relationships with fa
 
 ### Get Started with developing locally
 
-This project uses Ruby on Rails.
+- This project uses Ruby on Rails.
 
-#### Ruby version
-
-3.1.3
+#### Ruby version:
+- 3.1.3
+- There are various ways to install and update your ruby version. A popular ones is `rvm` which stands for ruby version manager, you can find more info on this and other options online.
 
 #### System dependencies:
 This how-to is written for MacOS, and works on intel machines. If you're successfully work on this using a different technology then please update this how-to with how you did it. 
