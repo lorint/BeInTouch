@@ -2,6 +2,7 @@ body {
     font-family: Georgia, serif;
     background-image: url("homepage_image.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
 
@@ -9,6 +10,11 @@ h1 {
     margin-bottom: 100px;
     text-align: center;
     color: steelblue;
+}
+
+.box {
+    border: none;
+    opacity: 0.8;
 }
 
 .field {
