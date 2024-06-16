@@ -19,13 +19,18 @@ h1 {
     margin-bottom: 15px;
 }
 
-.sign_in {
-    margin: auto;
+input[type=submit] {
     width: 60%;
     text-align: center;
     font-weight: bold;
-    padding: 5px;
+    background-color: white;
+    padding: 8px;
     margin-top: 20px;
     border-radius: 5px;
     border: 1px solid black;
+    transition-duration: 0.4s;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
 }
